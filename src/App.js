@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Video from "./Video";
+import tiktokVideo from "./assets/tiktok.mp4";
+import tiktokVideo2 from "./assets/tiktok2.mp4";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <div className="app__videos ">
+        <Video
+          url={tiktokVideo}
+          chennal={"@uuuUsman"}
+          description={"React M.E.R.N stack tiktok clone"}
+          song={"jera nasha"}
+          likes={"100"}
+          shares={200}
+          messages={"300"}
+        />
+        <Video
+          url={tiktokVideo2}
+          chennal={"@uuuUsman"}
+          description={"React M.E.R.N stack tiktok clone"}
+          song={"jera nasha"}
+          likes={"100"}
+          shares={200}
+          messages={"300"}
+        />
+      </div>
     </div>
   );
 }
